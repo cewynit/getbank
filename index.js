@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 async function connect() {
   try {
-    await mongoose.connect('mongodb+srv://oninecv:i6G0omrkIWsyKG8R@cluster0.nhxhbsl.mongodb.net/', { useNewUrlParser: true });
+    await mongoose.connect('mongodb+srv://dieucew:dgkvnPjFoDVL0z6Z@dieulink.iyxukns.mongodb.net/', { useNewUrlParser: true });
     console.log("Mongoose connect succsess");
   } catch (error) {
     console.log(error);
@@ -15,7 +15,7 @@ async function connect() {
 }
 connect();
 app.use("/api", routerGetBank);
-const PORT = process.env.PORT || 9986;
+const PORT = process.env.PORT || 9987;
 app.listen(PORT, () => {
   console.log("NodeJs is running PORT ", PORT);
 });
